@@ -20,8 +20,6 @@ Website yang saya buat adalah website untuk manajemen film yang sederhana. Admin
 
 ## Informasi Cara Menjalankan
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
 1. **Install Composer**
 2. **Clone project dari github**
 
