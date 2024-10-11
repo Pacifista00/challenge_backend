@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use App\Models\Genre;
+use App\Http\Resources\GenreResource;
 
 class GenreController extends Controller
 {
@@ -70,5 +71,11 @@ class GenreController extends Controller
         $genre->delete();
         return redirect('/genre')
         ->with(['success' => 'Data successfully deleted.']);
+    }
+    public function show(){
+        $genres = GenreResource::collection(Genre::all());
+        return response()->json([
+            "data" => $genres
+        ]);
     }
 }

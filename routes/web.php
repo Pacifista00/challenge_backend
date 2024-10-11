@@ -33,11 +33,12 @@ Route::group(['middleware'=>'auth'],function () {
     Route::post('/film/add', [FilmController::class, 'store']);
     Route::post('/film/update/{id}', [FilmController::class, 'update']);
     Route::post('/film/delete/{id}', [FilmController::class, 'destroy']);
+    Route::post('/search', [FilmController::class, 'search']);
 
     Route::get('/genre', [GenreController::class, 'index']);
     Route::post('/genre/add', [GenreController::class, 'store']);
     Route::post('/genre/update/{id}', [GenreController::class, 'update']);
     Route::post('/genre/delete/{id}', [GenreController::class, 'destroy']);
-
+    
     Route::post('/logout', [AuthController::class, 'logout']);
 });

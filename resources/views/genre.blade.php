@@ -2,6 +2,7 @@
 @section('content')
 <section class="min-vh-100 bg-dark">
     @include('./partials/navbar')
+    @include('./partials/search-bar')
     <div class="container">
         <div class="d-flex justify-content-between">
             <h1 class="text-white mb-4">Genre</h1>
